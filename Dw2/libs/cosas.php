@@ -1,38 +1,38 @@
 <?php
-//echo "cosas";
-$cosas="algunas cosas";
-$otra=23;
+//eco "cosas";
+$ cosas = "algunas cosas" ;
+$ otra = 23 ;
 //echo $otra." - ".$cosas."\n";
-if ($otra>0) {
-  //echo "<br> es mayor que cero";
-} else {
-  echo "es menor que cero";
+si ( $ otra > 0 ) {
+  //echo "<br>es mayor que cero";
+} más {
+  echo  "es menor que cero" ;
 }
-for ($i=0; $i < 5 ; $i++) {
+para ( $ i = 0 ; $ i < 5 ; $ i ++) {
 //echo $i."<br>";
 }
-function pagina1()
+funcion  pagina1 ()
 {
-  echo "<h3>GET</h3>";
-  echo "Un array asociativo de variables pasado al script actual vía parámetros URL (también conocida como cadena de consulta). Tenga en cuenta que el array no solo se rellena para las solicitudes GET, sino para todas las solicitudes con una cadena de consulta.";
+  echo  "<h3>OBTENER</h3>" ;
+  echo  "Un array asociativo de variables pasado al script actual vía parámetros URL (también conocido como cadena de consulta). Tenga en cuenta que el array no solo se rellena para las solicitudes GET, sino para todas las solicitudes con una cadena de consulta." ;
 }
-function pagina2()
+funcion  pagina2 ()
 {
-  echo "<h3>POST</h3>";
-  echo "Un array asociativo de variables pasadas al script actual a través del método POST de HTTP cuando se emplea application/x-www-form-urlencoded o multipart/form-data como Content-Type de HTTP en la petición. ";
+  echo  "<h3>POST</h3>" ;
+  echo  "Un array asociativo de variables pasadas al script actual a través del método POST de HTTP cuando se emplea application/x-www-form-urlencoded o multipart/form-data como Content-Type de HTTP en la petición. " ;
 }
-function pagina3()
+funcion  pagina3 ()
 {
-  echo "<h3>SESSION</h3>";
-  echo "Es un array asociativo que contiene variables de sesión disponibles para el script actual. Ver la documentación de Funciones de sesión para más información sobre su uso. ";
+  echo  "<h3>SESION</h3>" ;
+  echo  "Es un arreglo asociativo que contiene variables de sesión disponibles para el script actual. Ver la documentación de Funciones de sesión para más información sobre su uso. " ;
 }
 
 
-function menu($menu)
+ menú de funciones ( $ menú )
 {
-  for ($i=0; $i<count($menu);$i++ )
+  for ( $ i = 0 ; $ i < cuenta ( $ menú ); $ i ++ )
   {
-    echo "<li><a href='index.php?p=".$menu[$i]['codigo']."'>".$menu[$i]["nombre"]."</a></li>";
+    echo  "<li><a href='index.php?p=" . $ menú [ $ i ][ 'codigo' ]. "'>" . $ menú [ $ i ][ "nombre" ]. "</a></li>" ;
   }
 }
  ?>
