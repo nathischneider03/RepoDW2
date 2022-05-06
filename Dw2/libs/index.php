@@ -2,67 +2,66 @@
 require("contenido.php");
 require("cosas.php");
 ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <div class="container">
-    <div class="header">
-        <ul>
+<!DOCTYPEhtml >
+< html  lang =" es " dir =" ltr " >
+  < cabeza >
+    < juego de caracteres meta  =" utf-8 " >
+    < título > </ título >
+  </ cabeza >
+  < cuerpo >
+  < div  clase =" contenedor " >
+    < clase div  =" encabezado " >
+        < ul >
           <?php
-          menu($menu);
+          menú ( $ menú );
            ?>
-        </ul>
-    </div>
-    <div class="body">
+        </ ul >
+    </ div >
+    < div  clase =" cuerpo " >
 
       <?php
-        if (isset($menu[$_GET["p"]-1])) { ?>
-          <h3><?php echo $menu[$_GET["p"]-1]['titulo']; ?></h3>
-          <p><?php echo $menu[$_GET["p"]-1]['contenido']; ?></p>
+        if ( isset ( $ menú [ $ _GET [ "p" ]- 1 ])) { ?>
+          < h3 > <?php  echo  $ menú [ $ _GET [ "p" ]- 1 ][ 'titulo' ]; ?> </ h3 >
+          < p > <?php  echo  $ menú [ $ _GET [ "p" ]- 1 ][ 'contenido' ]; ?> </ p >
           <?php
-        } else {
-          echo "no se encontro elemento";
+        } más {
+          echo  "no se encontro elemento" ;
         }
        ?>
 
-<pre>
+< anterior >
 <?php
-//rint_r($menu);
+//rint_r($menú);
  ?>
-</pre>
+</ pre >
 
       <?php
       //echo "<p> el valor de p es ".$_GET["p"]." y ".$_GET["q"]."</p>";
-    //   if ($_GET["p"]==1)
-    //   {
-    //   pagina1();
-    // } elseif ($_GET["p"]==2) {
-    //   pagina2();
-    // } elseif ($_GET["p"]==3) {
-    //     pagina3();
-    //     }
+    // si ($_GET["p"]==1)
+    // {
+    // pagina1();
+    // } si no ($_GET["p"]==2) {
+    // pagina2();
+    // } si no ($_GET["p"]==3) {
+    // pagina3();
+    // }
 
       ?>
 
 
 
-    </div>
-    <div class="">
-      <form class="" action="procesar.php" method="post">
-<input type="text" name="nombre" value="" placeholder="Ingrese el nombre">
-<input type="text" name="apellido" value="" placeholder="Ingrese el apellido">
-<input type="date" name="fenac" value="<?php echo date("Y-m-d");?>" placeholder="Ingrese fecha de nacimiento">
-<input type="text" name="ecorreo" value="" placeholder="Ingrese una direccion de correo">
+    </ div >
+    < div  clase ="" >
+      < formulario  clase ="" acción =" procesar.php " método =" post " >
+< tipo de entrada  =" texto " nombre =" nombre " valor ="" placeholder =" Ingrese el nombre " > < br > 
+< input  type =" text " name =" apellido " value ="" placeholder =" ingrese Apellido " > < br >
+< input  type =" text " name =" fenac " value =" <?php  echo  date ( "Ymd" ); ?> " placeholder =" ingresar Fecha de Nacimiento " > < br >
+< tipo de entrada  =" texto " nombre =" ecorreo " valor ="" placeholder =" ingresar una dir. de correo " > < br >
+< tipo de botón  =" enviar " > Enviar </ botón >
+      </ formulario >
 
-<button type="submit">Enviar</button>
-      </form>
+    </ div >
 
-    </div>
-
-  </div>
-  </body>
-</html>
+  </ div >
+  </ cuerpo >
+</ html >
